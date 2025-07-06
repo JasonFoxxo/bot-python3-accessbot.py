@@ -12,4 +12,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 export BOT_TOKEN='YOUR_REAL_BOT_TOKEN'
 python access_bot.py
+git add runtime.txt
+git commit -m "Add runtime.txt to pin Python version"
+git push
 ```
