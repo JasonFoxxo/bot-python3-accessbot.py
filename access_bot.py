@@ -8,6 +8,8 @@ from aiogram.filters import Command
 from aiogram.types import Message
 
 API_TOKEN = os.getenv('BOT_TOKEN')
+if not API_TOKEN:
+    raise ValueError("❌ BOT_TOKEN is not set. Please configure it in Render environment variables.")
 MAIN_CHANNEL = -1002699957905
 SECRET_CHANNEL = -1002520692350
 ADMIN_IDS = [7715403070, 7618825755]
